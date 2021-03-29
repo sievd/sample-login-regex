@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <main>
+    <h1>Form validation</h1>
+    <div class="inputs-container">
+      <p>Check out this form!</p>
+      <div class="input-item">
+        <input type="text" placeholder="Username" id="username" required />
+        <label class="username-label"></label>
+      </div>
+      <div class="input-item">
+        <input type="password" placeholder="Password" id="password" required />
+        <label class="password-label"></label>
+        <label class="eye-label" id="see-icon"></label>
+        <label class="close-eye-label" id="not-see-icon"></label>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <div class="button" id="submit">Validate</div>
+    </div>
+  </main>
+  <div class="modal-wrapper" id="dialog">
+    <section class="modal">
+      <span class="close icon" id="close">&times;</span>
+      <p id="text-dialog" class="text-dialog"></p>
+      <div class="button-wrapper close">
+        <div class="button close" id="close-button">Ok!</div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="script.js"></script> 
+</html>
